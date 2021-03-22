@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ### aktualizacja auta nr 1
-PUT http://localhost:8080/cars
+PUT http://localhost:8080/cars/1
 Content-Type: application/json
 
 {

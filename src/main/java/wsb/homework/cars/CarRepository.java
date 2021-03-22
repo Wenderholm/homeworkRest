@@ -32,7 +32,7 @@ public class CarRepository {
         return car;
     }
 
-    Car update(Car car) {
+    Car update(Car car, Long id) {
         Car carToUpdate = find(car.getId());
         carToUpdate.setName(car.getName());
         carToUpdate.setProducer(car.getProducer());
