@@ -1,0 +1,30 @@
+### wypisanie wszystkich pojazdów
+GET http://localhost:8080/cars
+
+### wyświetlenie pojazdu nr 3
+GET http://localhost:8080/cars/3
+
+
+### dodawanie pojazdu gdzie id dodaje się samodzielnie
+POST http://localhost:8080/cars
+Content-Type: application/json
+
+{
+  "name": "57",
+  "producer": "Peugeot",
+  "price": 71700.0
+}
+
+### aktualizacja auta nr 1
+PUT http://localhost:8080/cars
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "auto",
+  "producer": "zaktualizowane",
+  "price": 71700.0
+}
+
+### usunięcie pojazdu nr 1
+DELETE http://localhost:8080/cars/1
